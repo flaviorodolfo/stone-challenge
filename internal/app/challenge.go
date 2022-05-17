@@ -1,6 +1,7 @@
 package app
 
 import (
+	"errors"
 	"stone-challenge/internal/model"
 )
 
@@ -27,12 +28,18 @@ func divideTotalValue(totalValue int, totalPersons int) []int {
 	return valuesList
 }
 
-func CalculateValues(cart []model.ShoppingCart, customer []model.Customer) map[string]int {
+func CalculateValues(cart []model.ShoppingCart, customer []model.Customer) (map[string]int, error) {
+	if len(cart) == 0 {
+		return nil, errors.New("the list of items is empty")
+	}
+	if len(customer) == 0 {
+		return nil, errors.New("the list of persons is empty")
+	}
 	totalValue := calculateCartValues(cart)
 	valuesList := divideTotalValue(totalValue, len(customer))
 	resultMap := make(map[string]int)
 	for index, value := range valuesList {
 		resultMap[customer[index].Email] = value
 	}
-	return resultMap
+	return resultMap, nil
 }
