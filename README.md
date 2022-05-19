@@ -27,15 +27,15 @@ var cartExample = []model.ShoppingCart{
     model.ShoppingCart{
         Quantity: 7,
         Item: model.Item{
-            Name:  "Bacon",
+            Name:  "Rice",
             Price: 3500,
         },
     },
     model.ShoppingCart{
-        Quantity: 7,
+        Quantity: 12,
 		Item: model.Item{
-        Name:  "Bacon",
-        Price: 3500,
+        Name:  "Bread",
+        Price: 4500,
         },
     },
 }
