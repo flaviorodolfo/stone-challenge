@@ -1,8 +1,8 @@
 # Stone Challenge
 
 ### About the challenge
-The challenge is a go project developed for Stone hiring test.
-The main goal of the project was to create a function that calculate the amount that one or more customers will pay pay according to a shopping list. With the objective of keeping easy understanding and future writing of the code some concepts of the book Código Limpo by Robert C. Martin were used.
+The challenge is a go project developed for Stone hiring test, the main goal of the project was to create a function that calculate the amount that one or more customers will pay pay according to a shopping list.
+With the objective of keeping easy understanding and future writing of the code some concepts of the book Código Limpo by Robert C. Martin were used.
 
 ### How to Start
 To start the application you need execute the main function, for that you need to run the command ``go run main.go`` in the main file dir (``\stone-challenge\cmd\challenge``).
