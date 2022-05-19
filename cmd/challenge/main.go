@@ -8,6 +8,16 @@ import (
 	"stone-challenge/internal/model"
 )
 
+//printMap prints a map in the format:
+/*
+	Key: #key1  Value: #value1
+	Key: #key2  Value: #value2
+	Key: #key3  Value: #value3
+	.
+	.
+	.
+	Key: #keyN  Value: #valueN
+*/
 func printMap(result map[string]int) {
 	fmt.Println("Map result:")
 	for key, value := range result {
